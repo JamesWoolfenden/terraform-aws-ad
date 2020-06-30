@@ -169,15 +169,26 @@ Sets the repository to be automatically dependency scanned in github.
 If you leave the section below in your **README.md** then the pre-commit will auto update your docs.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| aws | 2.68.0 |
+
 ## Providers
 
-No provider.
+| Name | Version |
+|------|---------|
+| aws | 2.68.0 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
+| ad | Adconnector | `map` | <pre>{<br>  "customer_dns_ips": [<br>    "A.B.C.D"<br>  ],<br>  "customer_username": "Admin",<br>  "edition": "",<br>  "name": "corp.notexample.com",<br>  "size": "Small",<br>  "subnet_ids": [<br>    "",<br>    ""<br>  ],<br>  "type": "ADConnector",<br>  "vpc_id": ""<br>}</pre> | no |
 | common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| password | n/a | `string` | `"SuperSecretPassw0rd"` | no |
+| vpc | n/a | `map` | <pre>{<br>  "subnet_ids": "",<br>  "vpc_id": ""<br>}</pre> | no |
 
 ## Outputs
 
