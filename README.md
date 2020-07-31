@@ -173,13 +173,13 @@ If you leave the section below in your **README.md** then the pre-commit will au
 
 | Name | Version |
 |------|---------|
-| aws | 2.68.0 |
+| aws | 3.00.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | 2.68.0 |
+| aws | 3.00.0 |
 
 ## Inputs
 
