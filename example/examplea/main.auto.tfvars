@@ -1,16 +1,18 @@
 common_tags = {
 "createdby" = "Terraform" }
 
-#connector
-ad={
-    name="corp.notexample.com"
-    edition=""
-    customer_dns_ips  = ["A.B.C.D"]
-    customer_username = "Admin"
-    size     = "Small"
-    type     = "ADConnector"
-  }
+password = "dontusethis"
 
+#connector
+ad = {
+  name              = "corp.notexample.com"
+  edition           = ""
+  customer_dns_ips  = ["A.B.C.D"]
+  customer_username = "Admin"
+  size              = "Small"
+  type              = "ADConnector"
+}
+/*
 #MSad
 ad={
     name="corp.notexample.com"
@@ -29,10 +31,10 @@ ad={
     customer_username = ""
     type     = ""
     size     = "Small"
-}
+}*/
 
 #populated for MSAD and SimpleAD
-vpc={
-id="vpc123124"
-subnet_ids=["subnet-1234","subnet2345"]
+vpc = {
+  id         = "vpc123124"
+  subnet_ids = ["subnet-1234", "subnet2345"]
 }
