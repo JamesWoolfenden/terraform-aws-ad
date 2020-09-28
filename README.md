@@ -28,7 +28,6 @@ module "ad" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -36,23 +35,23 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name        | Description                                        | Type     | Default                                                                                                                                                                                                                                                             | Required |
-| ----------- | -------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| ad          | Adconnector                                        | `map`    | <pre>{<br> "customer_dns_ips": [<br> "A.B.C.D"<br> ],<br> "customer_username": "Admin",<br> "edition": "",<br> "name": "corp.notexample.com",<br> "size": "Small",<br> "subnet_ids": [<br> "",<br> ""<br> ],<br> "type": "ADConnector",<br> "vpc_id": ""<br>}</pre> |    no    |
-| common_tags | This is to help you add tags to your cloud objects | `map`    | n/a                                                                                                                                                                                                                                                                 |   yes    |
-| password    | n/a                                                | `string` | n/a                                                                                                                                                                                                                                                                 |   yes    |
-| vpc         | n/a                                                | `map`    | <pre>{<br> "subnet_ids": "",<br> "vpc_id": ""<br>}</pre>                                                                                                                                                                                                            |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| ad | Adconnector | `map` | <pre>{<br>  "customer_dns_ips": [<br>    "A.B.C.D"<br>  ],<br>  "customer_username": "Admin",<br>  "edition": "",<br>  "name": "corp.notexample.com",<br>  "size": "Small",<br>  "subnet_ids": [<br>    "",<br>    ""<br>  ],<br>  "type": "ADConnector",<br>  "vpc_id": ""<br>}</pre> | no |
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| password | n/a | `string` | n/a | yes |
+| vpc | n/a | `map` | <pre>{<br>  "subnet_ids": "",<br>  "vpc_id": ""<br>}</pre> | no |
 
 ## Outputs
 
 | Name | Description |
-| ---- | ----------- |
-| ad   | n/a         |
+|------|-------------|
+| ad | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
