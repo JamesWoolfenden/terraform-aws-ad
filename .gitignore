@@ -1,7 +1,7 @@
 # Compiled files
 *.tfstate
 *.tfstate.backup
-*.bak
+*.zip
 
 # Module directory
 .terraform/
