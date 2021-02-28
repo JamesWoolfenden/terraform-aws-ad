@@ -42,12 +42,25 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_cloudwatch_log_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) |
+| [aws_directory_service_directory](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/directory_service_directory) |
+| [aws_directory_service_log_subscription](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/directory_service_log_subscription) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | ad | Adconnector | `map` | <pre>{<br>  "customer_dns_ips": [<br>    "A.B.C.D"<br>  ],<br>  "customer_username": "Admin",<br>  "edition": "",<br>  "name": "corp.notexample.com",<br>  "size": "Small",<br>  "subnet_ids": [<br>    "",<br>    ""<br>  ],<br>  "type": "ADConnector",<br>  "vpc_id": ""<br>}</pre> | no |
 | common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| kms\_key\_id | n/a | `string` | n/a | yes |
 | password | n/a | `string` | n/a | yes |
 | vpc | n/a | `map` | <pre>{<br>  "subnet_ids": "",<br>  "vpc_id": ""<br>}</pre> | no |
 
@@ -56,7 +69,7 @@ No requirements.
 | Name | Description |
 |------|-------------|
 | ad | n/a |
-
+| logs | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

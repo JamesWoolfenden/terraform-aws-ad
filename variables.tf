@@ -30,3 +30,7 @@ variable "password" {
   type      = string
   sensitive = true
 }
+
+variable "kms_key_id" {
+  type = string
+}

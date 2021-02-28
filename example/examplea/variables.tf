@@ -17,5 +17,11 @@ variable "ad" {
 
 
 variable "password" {
-  type = string
+  type      = string
+  sensitive = true
+}
+
+
+variable "region" {
+  default = "eu-west-2"
 }
