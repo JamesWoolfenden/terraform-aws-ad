@@ -1,5 +1,7 @@
 common_tags = {
-"createdby" = "Terraform" }
+  createdby = "terraform"
+  module    = "terraform-aws-ad"
+}
 
 password = "dontusethis"
 
