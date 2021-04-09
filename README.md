@@ -40,36 +40,36 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_cloudwatch_log_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) |
-| [aws_directory_service_directory](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/directory_service_directory) |
-| [aws_directory_service_log_subscription](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/directory_service_log_subscription) |
+| Name | Type |
+|------|------|
+| [aws_cloudwatch_log_group.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
+| [aws_directory_service_directory.ad](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/directory_service_directory) | resource |
+| [aws_directory_service_log_subscription.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/directory_service_log_subscription) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| ad | Adconnector | `map` | <pre>{<br>  "customer_dns_ips": [<br>    "A.B.C.D"<br>  ],<br>  "customer_username": "Admin",<br>  "edition": "",<br>  "name": "corp.notexample.com",<br>  "size": "Small",<br>  "subnet_ids": [<br>    "",<br>    ""<br>  ],<br>  "type": "ADConnector",<br>  "vpc_id": ""<br>}</pre> | no |
-| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| kms\_key\_id | n/a | `string` | n/a | yes |
-| password | n/a | `string` | n/a | yes |
-| vpc | n/a | `map` | <pre>{<br>  "subnet_ids": "",<br>  "vpc_id": ""<br>}</pre> | no |
+| <a name="input_ad"></a> [ad](#input\_ad) | Adconnector | `map` | <pre>{<br>  "customer_dns_ips": [<br>    "A.B.C.D"<br>  ],<br>  "customer_username": "Admin",<br>  "edition": "",<br>  "name": "corp.notexample.com",<br>  "size": "Small",<br>  "subnet_ids": [<br>    "",<br>    ""<br>  ],<br>  "type": "ADConnector",<br>  "vpc_id": ""<br>}</pre> | no |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | n/a | `string` | n/a | yes |
+| <a name="input_password"></a> [password](#input\_password) | n/a | `string` | n/a | yes |
+| <a name="input_vpc"></a> [vpc](#input\_vpc) | n/a | `map` | <pre>{<br>  "subnet_ids": "",<br>  "vpc_id": ""<br>}</pre> | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| ad | n/a |
-| logs | n/a |
+| <a name="output_ad"></a> [ad](#output\_ad) | n/a |
+| <a name="output_logs"></a> [logs](#output\_logs) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
