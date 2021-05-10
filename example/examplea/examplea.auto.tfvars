@@ -9,7 +9,7 @@ password = "dontusethis"
 ad = {
   name              = "corp.notexample.com"
   edition           = ""
-  customer_dns_ips  = ["A.B.C.D"]
+  customer_dns_ips  = ["10.0.0.0"]
   customer_username = "Admin"
   size              = "Small"
   type              = "ADConnector"
@@ -37,6 +37,6 @@ ad={
 
 #populated for MSAD and SimpleAD
 vpc = {
-  id         = "vpc123124"
+  vpc_id     = "vpc123124"
   subnet_ids = ["subnet-1234", "subnet2345"]
 }

@@ -1,5 +1,6 @@
 output "ad" {
-  value = aws_directory_service_directory.ad
+  value     = aws_directory_service_directory.ad
+  sensitive = true
 }
 
 output "logs" {
