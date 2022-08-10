@@ -85,24 +85,24 @@ The Policy required is:
     "Statement": {
         "Effect": "Allow",
         "Action": [
-            "logs:PutRetentionPolicy",
-            "logs:DeleteRetentionPolicy",
-            "logs:AssociateKmsKey",
-            "logs:DisassociateKmsKey",
-            "logs:TagLogGroup",
-            "logs:UntagLogGroup",
-            "logs:CreateLogGroup",
-            "logs:DescribeLogGroups",
-            "logs:ListTagsLogGroup",
-            "logs:DeleteLogGroup",
-            "kms:EnableKeyRotation",
-            "kms:PutKeyPolicy",
             "kms:CreateKey",
             "kms:DescribeKey",
+            "kms:EnableKeyRotation",
             "kms:GetKeyPolicy",
             "kms:GetKeyRotationStatus",
             "kms:ListResourceTags",
-            "kms:ScheduleKeyDeletion"
+            "kms:PutKeyPolicy",
+            "kms:ScheduleKeyDeletion",
+            "logs:AssociateKmsKey",
+            "logs:CreateLogGroup",
+            "logs:DeleteLogGroup",
+            "logs:DeleteRetentionPolicy",
+            "logs:DescribeLogGroups",
+            "logs:DisassociateKmsKey",
+            "logs:ListTagsLogGroup",
+            "logs:PutRetentionPolicy",
+            "logs:TagLogGroup",
+            "logs:UntagLogGroup"
         ],
         "Resource": "*"
     }
