@@ -72,6 +72,12 @@ No modules.
 | <a name="output_logs"></a> [logs](#output\_logs) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
+## Policy
+
+This is the policy required to build this project:
+
+<!-- BEGINNING OF PRE-COMMIT-PIKE DOCS HOOK -->
+<!-- END OF PRE-COMMIT-PIKE DOCS HOOK -->
 ## Related Projects
 
 Check out these related projects.
