@@ -77,6 +77,38 @@ No modules.
 This is the policy required to build this project:
 
 <!-- BEGINNING OF PRE-COMMIT-PIKE DOCS HOOK -->
+The Policy required is:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": {
+        "Effect": "Allow",
+        "Action": [
+            "logs:PutRetentionPolicy",
+            "logs:DeleteRetentionPolicy",
+            "logs:AssociateKmsKey",
+            "logs:DisassociateKmsKey",
+            "logs:TagLogGroup",
+            "logs:UntagLogGroup",
+            "logs:CreateLogGroup",
+            "logs:DescribeLogGroups",
+            "logs:ListTagsLogGroup",
+            "logs:DeleteLogGroup",
+            "kms:EnableKeyRotation",
+            "kms:PutKeyPolicy",
+            "kms:CreateKey",
+            "kms:DescribeKey",
+            "kms:GetKeyPolicy",
+            "kms:GetKeyRotationStatus",
+            "kms:ListResourceTags",
+            "kms:ScheduleKeyDeletion"
+        ],
+        "Resource": "*"
+    }
+}
+
+```
 <!-- END OF PRE-COMMIT-PIKE DOCS HOOK -->
 ## Related Projects
 
