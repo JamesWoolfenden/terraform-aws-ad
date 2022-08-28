@@ -82,30 +82,40 @@ The Policy required is:
 ```json
 {
     "Version": "2012-10-17",
-    "Statement": {
-        "Effect": "Allow",
-        "Action": [
-            "kms:CreateKey",
-            "kms:DescribeKey",
-            "kms:EnableKeyRotation",
-            "kms:GetKeyPolicy",
-            "kms:GetKeyRotationStatus",
-            "kms:ListResourceTags",
-            "kms:PutKeyPolicy",
-            "kms:ScheduleKeyDeletion",
-            "logs:AssociateKmsKey",
-            "logs:CreateLogGroup",
-            "logs:DeleteLogGroup",
-            "logs:DeleteRetentionPolicy",
-            "logs:DescribeLogGroups",
-            "logs:DisassociateKmsKey",
-            "logs:ListTagsLogGroup",
-            "logs:PutRetentionPolicy",
-            "logs:TagLogGroup",
-            "logs:UntagLogGroup"
-        ],
-        "Resource": "*"
-    }
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "kms:CreateKey",
+                "kms:DescribeKey",
+                "kms:EnableKeyRotation",
+                "kms:GetKeyPolicy",
+                "kms:GetKeyRotationStatus",
+                "kms:ListResourceTags",
+                "kms:PutKeyPolicy",
+                "kms:ScheduleKeyDeletion"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "logs:AssociateKmsKey",
+                "logs:CreateLogGroup",
+                "logs:DeleteLogGroup",
+                "logs:DeleteRetentionPolicy",
+                "logs:DescribeLogGroups",
+                "logs:DisassociateKmsKey",
+                "logs:ListTagsLogGroup",
+                "logs:PutRetentionPolicy",
+                "logs:TagLogGroup",
+                "logs:UntagLogGroup"
+            ],
+            "Resource": "*"
+        }
+    ]
 }
 
 ```
