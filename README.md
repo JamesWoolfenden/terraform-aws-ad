@@ -80,26 +80,51 @@ This is the policy required to build this project:
 The Policy required is:
 
 ```json
-{
+resource "aws_iam_policy" "terraformXVlBzgba" {
+  name        = "terraformXVlBzgba"
+  path        = "/"
+  description = "Add Description"
+
+  policy = jsonencode({
     "Version": "2012-10-17",
     "Statement": [
         {
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "kms:CreateKey",
-                "kms:DescribeKey",
-                "kms:EnableKeyRotation",
-                "kms:GetKeyPolicy",
-                "kms:GetKeyRotationStatus",
-                "kms:ListResourceTags",
-                "kms:PutKeyPolicy",
-                "kms:ScheduleKeyDeletion"
+                "ds:AddTagsToResource",
+                "ds:CreateDirectory",
+                "ds:CreateLogSubscription",
+                "ds:DeleteDirectory",
+                "ds:DeleteLogSubscription",
+                "ds:ListTagsForResource",
+                "ds:RemoveTagsFromResource"
             ],
             "Resource": "*"
         },
         {
             "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:CreateSecurityGroup",
+                "ec2:CreateTags",
+                "ec2:DeleteNetworkInterface",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DeleteTags",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor2",
             "Effect": "Allow",
             "Action": [
                 "logs:AssociateKmsKey",
@@ -116,7 +141,9 @@ The Policy required is:
             "Resource": "*"
         }
     ]
+})
 }
+
 
 ```
 <!-- END OF PRE-COMMIT-PIKE DOCS HOOK -->
