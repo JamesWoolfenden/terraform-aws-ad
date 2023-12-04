@@ -1,6 +1,6 @@
 # terraform-aws-ad
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-ad/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-ad)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-ad/workflows/Verify/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-ad)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-ad.svg)](https://github.com/JamesWoolfenden/terraform-aws-ad/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-ad.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-ad/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
@@ -97,10 +97,13 @@ resource "aws_iam_policy" "terraform_pike" {
                 "ds:CreateLogSubscription",
                 "ds:DeleteDirectory",
                 "ds:DeleteLogSubscription",
+                "ds:DescribeDirectories",
                 "ds:ListTagsForResource",
                 "ds:RemoveTagsFromResource"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor1",
@@ -121,7 +124,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "ec2:RevokeSecurityGroupEgress",
                 "ec2:RevokeSecurityGroupIngress"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor2",
@@ -138,7 +143,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "logs:TagLogGroup",
                 "logs:UntagLogGroup"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
@@ -167,7 +174,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2022 James Woolfenden
+Copyright © 2019-2023 James Woolfenden
 
 ## License
 

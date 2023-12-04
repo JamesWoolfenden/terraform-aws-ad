@@ -1,4 +1,3 @@
-
 resource "aws_kms_key" "ad" {
   enable_key_rotation = true
   policy              = <<POLICY
@@ -38,7 +37,6 @@ resource "aws_kms_key" "ad" {
 }
 POLICY
 }
-
 locals {
   log_name = "/aws/directoryservice/${module.ad.ad.id}"
 }
