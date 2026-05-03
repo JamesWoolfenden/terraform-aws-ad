@@ -98,6 +98,8 @@ resource "aws_iam_policy" "terraform_pike" {
                 "ds:DeleteDirectory",
                 "ds:DeleteLogSubscription",
                 "ds:DescribeDirectories",
+                "ds:DisableSso",
+                "ds:EnableSso",
                 "ds:ListTagsForResource",
                 "ds:RemoveTagsFromResource"
             ],
@@ -138,6 +140,7 @@ resource "aws_iam_policy" "terraform_pike" {
                 "logs:DeleteRetentionPolicy",
                 "logs:DescribeLogGroups",
                 "logs:DisassociateKmsKey",
+                "logs:ListTagsForResource",
                 "logs:ListTagsLogGroup",
                 "logs:PutRetentionPolicy",
                 "logs:TagLogGroup",
